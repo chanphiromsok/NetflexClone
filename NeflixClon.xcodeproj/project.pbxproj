@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		E0C8DC3D2C4A72A40098568A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C8DC3C2C4A72A40098568A /* AppDelegate.swift */; };
 		E0C8DC3F2C4A72A40098568A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C8DC3E2C4A72A40098568A /* SceneDelegate.swift */; };
-		E0C8DC412C4A72A40098568A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C8DC402C4A72A40098568A /* ViewController.swift */; };
-		E0C8DC442C4A72A40098568A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E0C8DC432C4A72A40098568A /* Base */; };
+		E0C8DC412C4A72A40098568A /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C8DC402C4A72A40098568A /* MainTabBarViewController.swift */; };
 		E0C8DC462C4A72A50098568A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0C8DC452C4A72A50098568A /* Assets.xcassets */; };
-		E0C8DC492C4A72A50098568A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E0C8DC482C4A72A50098568A /* Base */; };
 		E0C8DC542C4A72A60098568A /* NeflixClonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C8DC532C4A72A60098568A /* NeflixClonTests.swift */; };
 		E0C8DC5E2C4A72A60098568A /* NeflixClonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C8DC5D2C4A72A60098568A /* NeflixClonUITests.swift */; };
 		E0C8DC602C4A72A60098568A /* NeflixClonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C8DC5F2C4A72A60098568A /* NeflixClonUITestsLaunchTests.swift */; };
+		E0C8DC6E2C4A77240098568A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C8DC6D2C4A77240098568A /* HomeViewController.swift */; };
+		E0C8DC702C4A77840098568A /* UpcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C8DC6F2C4A77840098568A /* UpcomingViewController.swift */; };
+		E0C8DC722C4A77A70098568A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C8DC712C4A77A70098568A /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,16 +40,17 @@
 		E0C8DC392C4A72A40098568A /* NeflixClon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeflixClon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0C8DC3C2C4A72A40098568A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0C8DC3E2C4A72A40098568A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E0C8DC402C4A72A40098568A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E0C8DC432C4A72A40098568A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E0C8DC402C4A72A40098568A /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		E0C8DC452C4A72A50098568A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E0C8DC482C4A72A50098568A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0C8DC4A2C4A72A50098568A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0C8DC4F2C4A72A60098568A /* NeflixClonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeflixClonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0C8DC532C4A72A60098568A /* NeflixClonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeflixClonTests.swift; sourceTree = "<group>"; };
 		E0C8DC592C4A72A60098568A /* NeflixClonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeflixClonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0C8DC5D2C4A72A60098568A /* NeflixClonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeflixClonUITests.swift; sourceTree = "<group>"; };
 		E0C8DC5F2C4A72A60098568A /* NeflixClonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeflixClonUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E0C8DC6D2C4A77240098568A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E0C8DC6F2C4A77840098568A /* UpcomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingViewController.swift; sourceTree = "<group>"; };
+		E0C8DC712C4A77A70098568A /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +101,11 @@
 		E0C8DC3B2C4A72A40098568A /* NeflixClon */ = {
 			isa = PBXGroup;
 			children = (
+				E0C8DC6C2C4A76E70098568A /* Controller */,
 				E0C8DC3C2C4A72A40098568A /* AppDelegate.swift */,
 				E0C8DC3E2C4A72A40098568A /* SceneDelegate.swift */,
-				E0C8DC402C4A72A40098568A /* ViewController.swift */,
-				E0C8DC422C4A72A40098568A /* Main.storyboard */,
+				E0C8DC402C4A72A40098568A /* MainTabBarViewController.swift */,
 				E0C8DC452C4A72A50098568A /* Assets.xcassets */,
-				E0C8DC472C4A72A50098568A /* LaunchScreen.storyboard */,
 				E0C8DC4A2C4A72A50098568A /* Info.plist */,
 			);
 			path = NeflixClon;
@@ -125,6 +126,16 @@
 				E0C8DC5F2C4A72A60098568A /* NeflixClonUITestsLaunchTests.swift */,
 			);
 			path = NeflixClonUITests;
+			sourceTree = "<group>";
+		};
+		E0C8DC6C2C4A76E70098568A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E0C8DC6D2C4A77240098568A /* HomeViewController.swift */,
+				E0C8DC6F2C4A77840098568A /* UpcomingViewController.swift */,
+				E0C8DC712C4A77A70098568A /* SearchViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +243,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0C8DC462C4A72A50098568A /* Assets.xcassets in Resources */,
-				E0C8DC492C4A72A50098568A /* Base in Resources */,
-				E0C8DC442C4A72A40098568A /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +267,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0C8DC412C4A72A40098568A /* ViewController.swift in Sources */,
+				E0C8DC722C4A77A70098568A /* SearchViewController.swift in Sources */,
+				E0C8DC412C4A72A40098568A /* MainTabBarViewController.swift in Sources */,
 				E0C8DC3D2C4A72A40098568A /* AppDelegate.swift in Sources */,
 				E0C8DC3F2C4A72A40098568A /* SceneDelegate.swift in Sources */,
+				E0C8DC702C4A77840098568A /* UpcomingViewController.swift in Sources */,
+				E0C8DC6E2C4A77240098568A /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,25 +307,6 @@
 			targetProxy = E0C8DC5A2C4A72A60098568A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		E0C8DC422C4A72A40098568A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E0C8DC432C4A72A40098568A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E0C8DC472C4A72A50098568A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E0C8DC482C4A72A50098568A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E0C8DC612C4A72A60098568A /* Debug */ = {
@@ -447,7 +440,6 @@
 				INFOPLIST_FILE = NeflixClon/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -457,6 +449,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.learning.NeflixClon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -475,7 +470,6 @@
 				INFOPLIST_FILE = NeflixClon/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -485,6 +479,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.learning.NeflixClon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
