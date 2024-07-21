@@ -1,18 +1,17 @@
 //
-//  SearchViewController.swift
+//  DownloadsViewController.swift
 //  NeflixClon
 //
-//  Created by rom on 19/07/2024.
+//  Created by rom on 20/7/24.
 //
 
 import UIKit
 
-class SearchViewController: UIViewController {
+class DownloadsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-
         // Do any additional setup after loading the view.
     }
     
