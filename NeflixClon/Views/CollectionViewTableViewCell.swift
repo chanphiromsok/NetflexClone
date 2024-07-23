@@ -40,8 +40,6 @@ class CollectionViewTableViewCell: UITableViewCell {
     }
     override func layoutSubviews() {
         super.layoutSubviews()
-        print(collectionView.bounds)
-        print(bounds)
         collectionView.frame = contentView.bounds
     }
     

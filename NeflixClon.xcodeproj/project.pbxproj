@@ -10,6 +10,8 @@
 		E00BD7352C4C037E0065558D /* DownloadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00BD7342C4C037E0065558D /* DownloadsViewController.swift */; };
 		E05D9F4F2C4E63A900546BB5 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = E05D9F4E2C4E63A900546BB5 /* SDWebImage */; };
 		E05D9F512C4E63A900546BB5 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E05D9F502C4E63A900546BB5 /* SDWebImageMapKit */; };
+		E05DF16C2C4FF5B300A76DBA /* TitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05DF16B2C4FF5B300A76DBA /* TitleViewModel.swift */; };
+		E05DF16E2C4FF65000A76DBA /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05DF16D2C4FF65000A76DBA /* TitleTableViewCell.swift */; };
 		E06ABD882C4CC02E0038F2DB /* HeroHeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06ABD872C4CC02E0038F2DB /* HeroHeaderUIView.swift */; };
 		E06ABD8A2C4CF5B60038F2DB /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06ABD892C4CF5B60038F2DB /* APICaller.swift */; };
 		E06ABD8C2C4D12080038F2DB /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06ABD8B2C4D12080038F2DB /* Title.swift */; };
@@ -47,6 +49,8 @@
 
 /* Begin PBXFileReference section */
 		E00BD7342C4C037E0065558D /* DownloadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsViewController.swift; sourceTree = "<group>"; };
+		E05DF16B2C4FF5B300A76DBA /* TitleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewModel.swift; sourceTree = "<group>"; };
+		E05DF16D2C4FF65000A76DBA /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
 		E06ABD872C4CC02E0038F2DB /* HeroHeaderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroHeaderUIView.swift; sourceTree = "<group>"; };
 		E06ABD892C4CF5B60038F2DB /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		E06ABD8B2C4D12080038F2DB /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
@@ -99,6 +103,7 @@
 		E0A9473E2C4C0D6C00EECB37 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				E05DF16B2C4FF5B300A76DBA /* TitleViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -109,6 +114,7 @@
 				E0A947442C4C0E4A00EECB37 /* CollectionViewTableViewCell.swift */,
 				E06ABD962C4D48530038F2DB /* TitleCollectionViewCell.swift */,
 				E06ABD872C4CC02E0038F2DB /* HeroHeaderUIView.swift */,
+				E05DF16D2C4FF65000A76DBA /* TitleTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -340,6 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0C8DC722C4A77A70098568A /* SearchViewController.swift in Sources */,
+				E05DF16E2C4FF65000A76DBA /* TitleTableViewCell.swift in Sources */,
 				E06ABD972C4D48530038F2DB /* TitleCollectionViewCell.swift in Sources */,
 				E0C8DC412C4A72A40098568A /* MainTabBarViewController.swift in Sources */,
 				E0A947452C4C0E4A00EECB37 /* CollectionViewTableViewCell.swift in Sources */,
@@ -350,6 +357,7 @@
 				E0C8DC702C4A77840098568A /* UpcomingViewController.swift in Sources */,
 				E06ABD8E2C4D158A0038F2DB /* Extentions.swift in Sources */,
 				E0C8DC6E2C4A77240098568A /* HomeViewController.swift in Sources */,
+				E05DF16C2C4FF5B300A76DBA /* TitleViewModel.swift in Sources */,
 				E06ABD8C2C4D12080038F2DB /* Title.swift in Sources */,
 				E06ABD8A2C4CF5B60038F2DB /* APICaller.swift in Sources */,
 			);
@@ -689,7 +697,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
 			requirement = {
-				kind = upToNextMajorVersion;
+				kind = upToNextMinorVersion;
 				minimumVersion = 5.19.4;
 			};
 		};
