@@ -16,7 +16,7 @@ class CollectionViewTableViewCell: UITableViewCell {
     
     private let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: 140, height: 200)
+        layout.itemSize = CGSize(width: 160, height: 200)
         
         layout.scrollDirection = .horizontal
         let collectionView = UICollectionView(frame: .zero,collectionViewLayout: layout)
@@ -26,9 +26,8 @@ class CollectionViewTableViewCell: UITableViewCell {
     }()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        contentView.backgroundColor = .systemPink
+        
         contentView.addSubview(collectionView)
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -41,6 +40,8 @@ class CollectionViewTableViewCell: UITableViewCell {
     }
     override func layoutSubviews() {
         super.layoutSubviews()
+        print(collectionView.bounds)
+        print(bounds)
         collectionView.frame = contentView.bounds
     }
     
@@ -48,7 +49,8 @@ class CollectionViewTableViewCell: UITableViewCell {
         self.titles = titles
         DispatchQueue.main.async { [weak self] in
             self?.collectionView.reloadData()
-        }    }
+        }
+    }
     
 }
 

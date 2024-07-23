@@ -44,7 +44,7 @@ class HomeViewController: UIViewController {
         homeTableView.delegate = self //create render section expose via tableView
         homeTableView.dataSource = self
         configureNavBar()
-        let headerView = HeroHeaderUIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 400))
+        let headerView = HeroHeaderUIView(frame: CGRect(x: -100, y: 100, width: view.bounds.width, height: 380))
         //        Add Header To TableList
         homeTableView.tableHeaderView = headerView
         
@@ -77,6 +77,47 @@ extension  HomeViewController: UITableViewDelegate,UITableViewDataSource {
                     print(error.localizedDescription)
                 }
             }
+        case Sections.TrendingTv.rawValue:
+            APICaller.shared.getTrendingTvs { result in
+                switch result {
+                    
+                case .success(let titles):
+                    cell.configure(with: titles)
+                case .failure(let error):
+                    debugPrint(error)
+                    print(error.localizedDescription)
+                }
+            }
+        case Sections.Popular.rawValue:
+            APICaller.shared.getPopular { result in
+                switch result {
+                    
+                case .success(let titles):
+                    cell.configure(with: titles)
+                case .failure(let error):
+                    print(error.localizedDescription)
+                }
+            }
+        case Sections.Upcoming.rawValue:
+            APICaller.shared.getUpcomingMovies{ result in
+                switch result {
+                case .success(let titles):
+                    cell.configure(with: titles)
+                    
+                case .failure(let error):
+                    debugPrint(error)
+                }
+            }
+        case Sections.TopRated.rawValue:
+            APICaller.shared.getTopRated{ result in
+                switch result {
+                case .success(let titles):
+                    cell.configure(with: titles)
+                    
+                case .failure(let error):
+                    debugPrint(error)
+                }
+            }
         default:
             return UITableViewCell()
             
@@ -96,11 +137,17 @@ extension  HomeViewController: UITableViewDelegate,UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        if value greater than cell height it will grow to 2row
         return 200
     }
     
+    
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 20
+        return 30
+    }
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        // Check CollectionViewTableViewCell itemSize use height 200 to estimated
+        return 200
     }
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return sectionTitles[section]

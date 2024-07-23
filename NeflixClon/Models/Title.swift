@@ -14,16 +14,13 @@ struct TrendingTitleResponse : Codable{
 
 
 struct Title : Codable {
-    let backdrop_path: String
     let id: Int
-    let title, original_title, overview, poster_path: String?
-    let media_type: String
-    let adult: Bool
-    let original_language: String
-    let genre_ids: [Int]
-    let popularity: Double
-    let release_date: String
-    let video: Bool
-    let vote_average: Double
+    let media_type: String?
+    let original_name: String?
+    let original_title: String?
+    let poster_path: String?
+    let overview: String?
     let vote_count: Int
+    let release_date: String?
+    let vote_average: Double
 }

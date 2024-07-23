@@ -30,6 +30,7 @@ class HeroHeaderUIView: UIView {
         return button
         
     }()
+    
     private let heroImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
@@ -38,26 +39,24 @@ class HeroHeaderUIView: UIView {
         return imageView
     }()
     
+    private let gradientLayer = CAGradientLayer()
+    
+    private func updateGradientColors() {
+        gradientLayer.colors = [
+            UIColor.clear.cgColor,
+            UIColor.systemBackground.cgColor
+        ]
+    }
+    //    SET ONLY ONCE
     private func addGradient() {
-        let gradientLayer = CAGradientLayer()
         gradientLayer.colors = [
             UIColor.clear.cgColor,
             UIColor.systemBackground.cgColor
         ]
         gradientLayer.frame = bounds
         layer.addSublayer(gradientLayer)
-        
     }
     
-    //    Render SubView here
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        addSubview(heroImageView)
-        addGradient()
-        addSubview(playButton)
-        addSubview(downloadButton)
-        applyConstrains()
-    }
     private func applyConstrains() {
         let playButtonConstrains = [
             playButton.leadingAnchor.constraint(equalTo: leadingAnchor,constant: 70),
@@ -72,10 +71,29 @@ class HeroHeaderUIView: UIView {
         NSLayoutConstraint.activate(playButtonConstrains)
         NSLayoutConstraint.activate(downloadButtonConstrains)
     }
+    //    Render SubView here
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        addSubview(heroImageView)
+        addGradient()
+        addSubview(playButton)
+        addSubview(downloadButton)
+        applyConstrains()
+    }
+    //    Listen update to dark mode shwo or hide
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        if #available(iOS 13.0, *) {
+            if traitCollection.hasDifferentColorAppearance(comparedTo: previousTraitCollection) {
+                updateGradientColors()
+            }
+        }
+    }
     
     override func layoutSubviews() {
         super.layoutSubviews()
         heroImageView.frame = bounds
+        
     }
     
     required init?(coder: NSCoder) {
