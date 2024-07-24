@@ -17,6 +17,7 @@
 		E06ABD8C2C4D12080038F2DB /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06ABD8B2C4D12080038F2DB /* Title.swift */; };
 		E06ABD8E2C4D158A0038F2DB /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06ABD8D2C4D158A0038F2DB /* Extentions.swift */; };
 		E06ABD972C4D48530038F2DB /* TitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06ABD962C4D48530038F2DB /* TitleCollectionViewCell.swift */; };
+		E075D6C82C50FFCD00A35772 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E075D6C72C50FFCD00A35772 /* SearchResultsViewController.swift */; };
 		E0A947452C4C0E4A00EECB37 /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A947442C4C0E4A00EECB37 /* CollectionViewTableViewCell.swift */; };
 		E0C8DC3D2C4A72A40098568A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C8DC3C2C4A72A40098568A /* AppDelegate.swift */; };
 		E0C8DC3F2C4A72A40098568A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C8DC3E2C4A72A40098568A /* SceneDelegate.swift */; };
@@ -56,6 +57,7 @@
 		E06ABD8B2C4D12080038F2DB /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
 		E06ABD8D2C4D158A0038F2DB /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		E06ABD962C4D48530038F2DB /* TitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCollectionViewCell.swift; sourceTree = "<group>"; };
+		E075D6C72C50FFCD00A35772 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 		E0A947442C4C0E4A00EECB37 /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
 		E0C8DC392C4A72A40098568A /* NeflixClon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeflixClon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0C8DC3C2C4A72A40098568A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 				E0C8DC6F2C4A77840098568A /* UpcomingViewController.swift */,
 				E0C8DC712C4A77A70098568A /* SearchViewController.swift */,
 				E00BD7342C4C037E0065558D /* DownloadsViewController.swift */,
+				E075D6C72C50FFCD00A35772 /* SearchResultsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				E00BD7352C4C037E0065558D /* DownloadsViewController.swift in Sources */,
 				E0C8DC3D2C4A72A40098568A /* AppDelegate.swift in Sources */,
 				E0C8DC3F2C4A72A40098568A /* SceneDelegate.swift in Sources */,
+				E075D6C82C50FFCD00A35772 /* SearchResultsViewController.swift in Sources */,
 				E0C8DC702C4A77840098568A /* UpcomingViewController.swift in Sources */,
 				E06ABD8E2C4D158A0038F2DB /* Extentions.swift in Sources */,
 				E0C8DC6E2C4A77240098568A /* HomeViewController.swift in Sources */,

@@ -17,6 +17,7 @@ class UpcomingViewController: UIViewController {
         
         let table = UITableView()
         table.register(TitleTableViewCell.self, forCellReuseIdentifier: TitleTableViewCell.identifier)
+        table.showsVerticalScrollIndicator = false
         return table
     }()
     
@@ -26,7 +27,6 @@ class UpcomingViewController: UIViewController {
         title = "Upcoming"
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationItem.largeTitleDisplayMode = .always
-        
         
         view.addSubview(upcomingTable)
         upcomingTable.delegate = self
